@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Str4">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/x3knbug2vcqjg_qwsgw62dn2w6e_dwxbgqz85hkorrskbddj9s3zxgiafeimn4nptsz90bplutra33rjj0h0kpdj" />
+
+    <LinearLayout
+        android:id="@+id/futter"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFDBDB"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/app_name"
+            android:onClick="toMap"
+            app:srcCompat="@drawable/map_pin" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:onClick="toProfil"
+            app:srcCompat="@drawable/account_svgrepo_com" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="75dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_marginTop="570dp"
+        android:layout_marginBottom="-51dp"
+        android:backgroundTint="#FF294D"
+        android:contentDescription="@string/material_motion_easing_decelerated"
+        android:onClick="toNewNote"
+        android:text="+"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/merriweather_italic"
+        android:text="Дневник"
+        android:textSize="30sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcView"
+        android:layout_width="match_parent"
+        android:layout_height="534dp"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="0dp" />
+
+
+</RelativeLayout>

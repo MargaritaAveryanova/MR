@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".Entry">
+
+    <Button
+        android:id="@+id/ButtonEntry"
+        android:layout_width="123dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#FF294D"
+        android:fontFamily="@font/merriweather_italic"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:onClick="toStr4"
+        android:text="Вход"
+        android:textColorHighlight="#FF294D"
+        android:textColorLink="#FF294D"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/merriweather_italic"
+        android:text="Вход"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextText11"
+        android:layout_width="288dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Имя пользователя"
+        android:inputType="text"
+        android:theme="@style/Theme.MyApp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword11"
+        android:theme="@style/Theme.MyApp"
+        android:layout_width="288dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText11" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="123dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#FF294D"
+        android:fontFamily="@font/merriweather_italic"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:onClick="toMainActivity"
+        android:text="Назад"
+        android:textColorHighlight="#FF294D"
+        android:textColorLink="#FF294D"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
